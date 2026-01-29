@@ -1,0 +1,15 @@
+/* Import Fonts  */
+@import url('../Fonts/Raleway/stylesheet.css');
+
+/* =====@_@ Reset Styles for CryptoDashboard @_@=====  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway Medium', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
