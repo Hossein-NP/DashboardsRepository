@@ -1,9 +1,10 @@
-/* =====@_@ Variabels @_@=====  */
+/* =====@_@ Import Font @_@=====  */
+@import url('../Fonts/fonts.css');
 
-/* Import Fonts  */
-@import url('../Fonts/Raleway/fonts.css');
+/* =====@_@ Import Utilities @_@=====  */
+@import url('../Styles/Utilities.css');
 
-/* Import   Variabels  */
+/* =====@_@ Import Variabels @_@=====  */
 @import url('../Styles/variabels.css');
 
 /* ===================^^^^^^^^^^^^^^^^^^^=================== */
@@ -68,11 +69,42 @@ aside {
   display: flex;
   align-items: center;
   column-gap: 0.6rem;
+  width: 17rem;
+  height: 4.1rem;
+  color: var(--color_text-gray-950);
+}
+
+.aside-top__logo {
+  color: inherit;
 }
 
 .aside-top__logoText {
-  font-family: ;
+  font-family: 'Inter Bold', sans-serif;
   font-size: 2.1rem;
+}
+
+/* Aside Styles >>>> 2) Aside Middle Section  */
+.aside-middle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+}
+.aside-middle__links {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  width: 16.6rem;
+  height: 3.2rem;
+}
+
+.aside-middle__link {
+  font-family: 'Raleway SemiBold';
+  font-size: 1.4rem;
+  letter-spacing: 4%;
+}
+
+.aside-middle__icon--active {
+  color: var(--color_text-gray-950);
 }
 
 /* Main Styles  */
