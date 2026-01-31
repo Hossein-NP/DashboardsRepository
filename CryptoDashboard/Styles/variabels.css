@@ -1,0 +1,29 @@
+/* =====@_@ Colors @_@=====  */
+
+:root {
+  --color_text-dark:  rgba(26, 32, 41, 1);
+  --color_text-dark50:  rgba(26, 32, 41, 0.5);
+  --color_text-dark2:  rgba(20, 22, 29, 1);
+  --color_bg-white: rgba(248, 248, 248, 1);
+  --color_zinc-600:  rgba(158, 158, 158, 1);
+  --color_green-600:  rgba(30, 203, 79, 1);
+  --color_green-700: rgba(76, 175, 80, 1);
+  --color_blue-600:  rgba(58, 111, 248, 1);
+  --color_blue-800: rgba(60, 80, 224, 1);
+  --color_cyan-600:  rgba(100, 207, 249, 1);
+  --color_pink-600: rgba(233, 59, 119, 1);
+  --color_pink-800: rgba(218, 31, 99, 1);
+  --color_text-gray-800: rgba(66, 66, 66, 1);
+  --color_gray-900: rgba(52, 71, 103, 1);
+  --color_text-slate-800: rgba(49, 53, 63, 1);
+  --color_slate-900: rgba(49, 53, 63, 1);
+  --color_orange-600: rgba(244, 109, 34, 1);
+  --color_orange-700: rgba(244, 67, 52, 1);
+  --color_purple-500: rgba(140, 119, 237, 1);
+}
+
+/* =====@_@ Colors for Dark Mode @_@=====  */
+
+/* :root[data-theme="dark"] {
+  --color
+} */

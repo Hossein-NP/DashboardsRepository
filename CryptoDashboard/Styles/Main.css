@@ -1,7 +1,19 @@
+/* =====@_@ Variabels @_@=====  */
+
 /* Import Fonts  */
-@import url('../Fonts/Raleway/stylesheet.css');
+@import url('../Fonts/Raleway/fonts.css');
+
+/* Import   Variabels  */
+@import url('../Styles/variabels.css');
+
+/* ===================^^^^^^^^^^^^^^^^^^^=================== */
 
 /* =====@_@ Reset Styles for CryptoDashboard @_@=====  */
+
+html {
+  font-size: 62.5%;
+ }
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +24,58 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* ===================^^^^^^^^^^^^^^^^^^^=================== */
+
+/* =====@_@ App Styles @_@=====  */
+
+/* Svg Styles  */
+.svg {
+  display: none;
+}
+
+/* Body Styles  */
+body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "aside header" "aside main";
+  grid-template-rows: 100px 100vh;
+  background-color: var(--color_bg-white);
+}
+
+/* Header Styles  */
+header {
+  /* background-color: var(--color_gray-900); */
+  grid-area: header;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Aside Styles  */
+aside {
+  /* background-color: var(--color_pink-800); */
+  grid-area: aside;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.12);
+  padding: 3rem;
+}
+
+/* Aside Styles >>>> 1-Aside Top Section  */
+.aside-top {
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+}
+
+.aside-top__logoText {
+  font-family: ;
+}
+
+/* Main Styles  */
+main {
+  /* background-color: var(--color_green-700); */
+  grid-area: main;
 }
