@@ -63,7 +63,7 @@ aside {
   padding: 3rem;
 }
 
-/* Aside Styles >>>> 1-Aside Top Section  */
+/* Aside Styles >>>> 1) Aside Top Section  */
 .aside-top {
   display: flex;
   align-items: center;
@@ -72,6 +72,7 @@ aside {
 
 .aside-top__logoText {
   font-family: ;
+  font-size: 2.1rem;
 }
 
 /* Main Styles  */
