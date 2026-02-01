@@ -29,7 +29,7 @@ a {
 
 /* ===================^^^^^^^^^^^^^^^^^^^=================== */
 
-/* =====@_@ App Styles @_@=====  */
+/* =====@_@ Start App Main Styles @_@=====  */
 
 /* Svg Styles  */
 .svg {
@@ -95,9 +95,10 @@ aside {
   column-gap: 2rem;
   width: 16.6rem;
   height: 3.2rem;
+  color: var(--color_text-dark);
 }
 
-.aside-middle__link {
+.aside-middle__text {
   font-family: 'Raleway SemiBold';
   font-size: 1.4rem;
   letter-spacing: 4%;
