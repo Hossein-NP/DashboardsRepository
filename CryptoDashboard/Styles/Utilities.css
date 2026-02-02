@@ -5,3 +5,24 @@
 .h-6 {
   height: 24px;
 }
+/* =====@_@ Layout @_@=====  */
+/* .hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.vertical-center {
+  align-items: center;
+}
+.horizantal-center {
+  justify-content: center;
+} */
+/* Gap  */
+/* .col-2 {
+  column-gap: 0.8rem;
+} */

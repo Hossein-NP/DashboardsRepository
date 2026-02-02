@@ -1,10 +1,8 @@
 /* =====@_@ Colors @_@=====  */
 
 :root {
-  --color_text-dark:  rgba(26, 32, 41, 1);
-  --color_text-dark50:  rgba(26, 32, 41, 0.5);
   --color_text-gray-950:  rgba(20, 22, 29, 1);
-  --color_bg-white: rgba(248, 248, 248, 1);
+  --color_white: rgba(248, 248, 248, 1);
   --color_zinc-600:  rgba(158, 158, 158, 1);
   --color_green-600:  rgba(30, 203, 79, 1);
   --color_green-700: rgba(76, 175, 80, 1);
