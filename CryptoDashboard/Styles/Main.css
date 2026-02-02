@@ -53,7 +53,7 @@ aside {
   top: 0;
   bottom: 0;
   box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.12);
-  padding: 3rem;
+  padding: 3rem 4rem;
   display: flex;
   flex-direction: column;
 }
@@ -62,6 +62,7 @@ aside {
   width: 17rem;
   height: 4.1rem;
   color: var(--color_text-gray-950);
+  padding-left: 1.5rem;
 }
 .aside-top a {
   display: flex;
@@ -114,6 +115,7 @@ aside {
 /* Aside Styles >>>> 3) Aside Bottom Section  */
 .aside-bottom {
   margin-top: auto;
+  padding-left: 1.5rem;
 }
 .aside-bottom__setting {
   display: flex;
