@@ -53,9 +53,10 @@ aside {
   top: 0;
   bottom: 0;
   box-shadow: 2px 0px 2px 0px rgba(0, 0, 0, 0.12);
-  padding: 3rem 4rem;
+  padding: 3.2rem 3rem;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 /* Aside Styles >>>> 1) Aside Top Section  */
 .aside-top {
@@ -86,7 +87,7 @@ aside {
   column-gap: 2rem;
   width: 16.6rem;
   height: 3.2rem;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   color: var(--color_text-gray-950);
   transition: all 100ms ease-in-out;
   -webkit-border-radius: 1rem;
@@ -150,7 +151,7 @@ aside {
 }
 
 .aside-bottom__theme:nth-child(1) button {
-  background-color: var(--color_bg-white);
+  background-color: var(--color_bg-white) !important;
 }
 /* Main Styles  */
 main {
