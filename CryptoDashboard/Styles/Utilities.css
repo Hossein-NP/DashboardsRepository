@@ -5,8 +5,14 @@
 .h-6 {
   height: 24px;
 }
+.w-11 {
+  width: 44px;
+}
+.h-11 {
+  height: 44px;
+}
 /* =====@_@ Layout @_@=====  */
-/* .hidden {
+.hidden {
   display: none;
 }
 .flex {
@@ -16,13 +22,34 @@
   align-items: center;
   justify-content: center;
 }
-.vertical-center {
+.items-center {
   align-items: center;
 }
-.horizantal-center {
+.justify-center {
   justify-content: center;
-} */
-/* Gap  */
-/* .col-2 {
-  column-gap: 0.8rem;
-} */
+} 
+.justify-between {
+  justify-content: space-between;
+}
+/* =====@_@ Position @_@=====  */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+/* =====@_@ Border Radius @_@=====  */
+.rounded-full {
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  -o-border-radius: 9999px;
+  border-radius: 9999px;
+}
+.rounded-2 {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
