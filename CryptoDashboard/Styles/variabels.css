@@ -2,6 +2,7 @@
 
 :root {
   --color_text-gray-950:  rgba(20, 22, 29, 1);
+  --color_text-gray-950-50:  rgba(20, 22, 29, 0.5);
   --color_white-100: rgba(255, 255, 255, 1);
   --color_white: rgba(248, 248, 248, 1);
   --color_zinc-600:  rgba(158, 158, 158, 1);

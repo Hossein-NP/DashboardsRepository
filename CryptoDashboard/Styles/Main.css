@@ -63,10 +63,11 @@ header {
   width: 40%;
   height: 4.4rem;
   background-color: var(--color_white-100);
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 0 2rem 0 2rem;
+  border: 1px solid var(--color_blue-600);
 }
 #header-search__input {
-  width: 100%;
+  width: 95%;
   height: 100%;
   color: var(--color_text-slate-800);
   caret-color: var(--color_blue-600);
@@ -74,13 +75,14 @@ header {
 #header-search__input::placeholder {
   font-family: 'Raleway Regular', sans-serif;
   font-size: 1.4rem;
-  color: var(--color_zinc-600);
+  color: var(--color_text-gray-950-50);
+  padding: 1rem 0;
 }
 .header-searchbar__btn {
   right: 2rem;
   top: 1rem;
   cursor: pointer;
-  color: var(--color_zinc-600);
+  color: var(--color_text-gray-950-50);
 }
 /* Header Styles >> Right Side  */
 .header-user-actions {
@@ -88,6 +90,7 @@ header {
 }
 .user-actions__notification {
   background-color: var(--color_white-100);
+  border: 1px solid var(--color_blue-600);
   cursor: pointer;
 }
 .user-action__info {
