@@ -1,14 +1,15 @@
 /* =====@_@ Import Font @_@=====  */
 @import url('../Fonts/fonts.css');
 
-/* =====@_@ Media Queries @_@=====  */
-@import url('./Media.css');
 
 /* =====@_@ Import Variabels @_@=====  */
 @import url('Variabels.css');
 
 /* =====@_@ Import Utilities @_@=====  */
 @import url('Utilities.css');
+
+/* =====@_@ Media Queries @_@=====  */
+@import url('./Media.css');
 
 
 
@@ -45,9 +46,6 @@ input {
 /* =====@_@ Start App Main Styles >> Body Styles  @_@=====  */
 body {
   display: grid;
-  grid-template-columns: 15% 85%;
-  grid-template-areas: "aside header" "aside main";
-  grid-template-rows: 100px 100vh;
   background-color: var(--color_white);
 }
 
@@ -103,13 +101,20 @@ header {
   column-gap: 1.5rem;
 }
 .user-action__info-name {
+  color: var(--color_text-gray-950);
+  column-gap: 1.5rem;
+  cursor: pointer;
+}
+.user-action__info-name span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
   font-family: 'Poppins SemiBold', sans-serif;
   font-size: 1.4rem;
   line-height: 100%;
   letter-spacing: 4%;
-  color: var(--color_text-gray-950);
-  column-gap: 1.5rem;
-  cursor: pointer;
+  width: 116px;
 }
 .user-action__info-img {
   width: 4.4rem;

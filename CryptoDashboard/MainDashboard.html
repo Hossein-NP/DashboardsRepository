@@ -107,7 +107,9 @@
    <header class="flex items-center justify-between">
     <!-- Development for 📱  and 📱📱 screens -->
     <button type="button" class="burger-menu" role="button" aria-label="burger menu button">
-
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <use href="#burger-menu"></use>
+      </svg>
     </button>
     <!-- Header left side >> header title -->
     <h5 class="header-title">Dashboard</h5>
@@ -134,7 +136,7 @@
         <img src="Images/PNG/user-img2.jpg" class="user-action__info-img rounded-full" alt="">
         <!-- User name  -->
         <button type="button" class="user-action__info-name flex items-center">
-          Esther Howard
+          <span>Esther Howard</span>
           <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
             <use href="#arrow-down"></use>
           </svg>
@@ -145,7 +147,7 @@
   <!-- *_*Finish Header*_*  -->
   
   <!-- *_*Start Sidebar*_*  -->
-   <aside aria-label="Sidebar">
+   <aside aria-label="Sidebar" id="aside">
     <!-- Aside Top section  -->
     <div class="aside-top">
       <a href="http://"  class="aside-top__link" aria-label="Go to homepage" >

@@ -1,11 +1,28 @@
 /* =====@_@ Media Queries @_@=====  */
-@media screen and (max-width: 992px) {
+@media  (max-width: 992px) {
 
   body {
-    grid-template-areas: "header header" "main main" !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "header" "main";
   }
-  aside, .header-title, .header-searchbar {
-    display: none !important;
+ .header-title, .header-searchbar {
+    display: none;
   }
+  #aside {
+    position: static;
+    display: none;
+  }
+
 }
 
+@media (min-width: 993px) {
+  body {
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "aside header" "aside main";
+  }
+  aside {
+    position: fixed;
+}
+}
