@@ -1,0 +1,11 @@
+/* =====@_@ Media Queries @_@=====  */
+@media screen and (max-width: 992px) {
+
+  body {
+    grid-template-areas: "header header" "main main" !important;
+  }
+  aside, .header-title, .header-searchbar {
+    display: none !important;
+  }
+}
+

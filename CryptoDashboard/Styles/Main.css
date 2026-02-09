@@ -1,11 +1,17 @@
 /* =====@_@ Import Font @_@=====  */
 @import url('../Fonts/fonts.css');
 
-/* =====@_@ Import Utilities @_@=====  */
-@import url('../Styles/Utilities.css');
+/* =====@_@ Media Queries @_@=====  */
+@import url('./Media.css');
 
 /* =====@_@ Import Variabels @_@=====  */
-@import url('../Styles/variabels.css');
+@import url('Variabels.css');
+
+/* =====@_@ Import Utilities @_@=====  */
+@import url('Utilities.css');
+
+
+
 
 /* ===================^^^^^^^^^^^^^^^^^^^=================== */
 
