@@ -70,7 +70,7 @@ header {
   border: 1px solid var(--color_blue-600);
 }
 #header-search__input {
-  width: 95%;
+  width: 90%;
   height: 100%;
   color: var(--color_text-slate-800);
   caret-color: var(--color_blue-600);
@@ -86,6 +86,7 @@ header {
   top: 1rem;
   cursor: pointer;
   color: var(--color_text-gray-950-50);
+  background-color: var(--color_white-100);
 }
 /* Header Styles >> Right Side  */
 .header-user-actions {

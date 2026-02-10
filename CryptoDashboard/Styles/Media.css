@@ -14,15 +14,17 @@
  .header-title, .header-searchbar {
     display: none;
   }
-  .form-wrapper {
-    margin-top: 3.2rem;
+  .header-searchbar--mb {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 70% !important;
+    margin: 3.2rem auto;
+    column-gap: 2rem;
   }
-  .form-wrapper .header-searchbar--mb {
-    display: block;
-    width: 60%;
+  .header-searchbar--mb button{
+    order: 1;
+  }
+  .header-searchbar--mb input{
+    order: 2;
   }
   #aside {
     position: static;
