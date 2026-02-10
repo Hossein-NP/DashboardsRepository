@@ -20,6 +20,8 @@
   --color_orange-600: rgba(244, 109, 34, 1);
   --color_orange-700: rgba(244, 67, 52, 1);
   --color_purple-500: rgba(140, 119, 237, 1);
+  --sidebar-width: 240px;
+  --sidebar-collapsed: 72px;
 }
 
 /* =====@_@ Colors for Dark Mode @_@=====  */

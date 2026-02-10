@@ -1,55 +1,100 @@
 /* =====@_@ Media Queries @_@=====  */
-@media  (max-width: 576px) {
-  .user-action__info-name {
+/* Desktop large */
+@media (min-width: 1201px) { … }
+
+/* Desktop / Laptop */
+@media (max-width: 1200px) {
+  body {
+    grid-template-columns: var(--sidebar-collapsed) 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "aside header" "aside main";
+  }
+  aside {
+    width: var(--sidebar-collapsed); /* collapsed width */
+    padding: 3.7rem 1.5rem;
+  }
+  .aside-top {
+    padding-left: 0;
+    width: auto;
+  }
+  aside .aside-middle__text {
+    display: none;
+  }
+  .aside-top__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   .aside-top__logoText {
+    display: none;
+  }
+  .aside-top__logoText {
+    display: none;
+  }
+  .aside-middle__links {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 0;
+    justify-content: center;
+  }
+  .aside-bottom {
+    padding-left: 0;
+  }
+  .aside-bottom .aside-bottom__setting{
+    align-items: center;
+  }
+  #aside-bottom__theme-light, #aside-bottom__theme-dark {
+    justify-content: center;
+    width: auto;
+  }
+  .aside-bottom__setting-links span, .aside-bottom__theme span {
     display: none;
   }
 }
 
-@media  (max-width: 992px) {
+/* Tablet / Small Desktop */
+@media (max-width: 992px) {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr;
     grid-template-areas: "header" "main";
   }
- .header-title, .header-searchbar {
+  .header-title,
+  .header-searchbar {
     display: none;
   }
   .header-searchbar--mb {
     display: flex;
-    width: 70% !important;
+    width: 70%;
+    max-width: 100%;
     margin: 3.2rem auto;
     column-gap: 2rem;
   }
-  .header-searchbar--mb button{
+  .header-searchbar--mb button {
     order: 1;
   }
-  .header-searchbar--mb input{
+  .header-searchbar--mb input {
     order: 2;
   }
   #aside {
-    position: static;
-    display: none;
-  }
+    transform: translateX(-100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
   .burger-menu {
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
-@media (min-width: 993px) {
-  body {
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 100px 1fr;
-    grid-template-areas: "aside header" "aside main";
-  }
-  aside {
-    position: fixed;
-  }
-  .burger-menu {
-    display: none;
-  }
-  .header-searchbar--mb {
+/* Mobile */
+@media (max-width: 576px) {
+  .user-action__info-name {
     display: none;
   }
 }
+
+
+
