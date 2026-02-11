@@ -6,7 +6,6 @@ let asideMiddleLinks = document.querySelectorAll(".aside-middle__links");
 let asideTopLogoText = document.querySelectorAll(".aside-top__logoText");
 let setting = document.querySelector(".setting");
 let logOut = document.querySelector(".logout");
-
 let overlay = document.querySelectorAll(".overlay");
 
 
@@ -17,7 +16,7 @@ let darkTheme = document.querySelector(".aside-bottom__theme-dark");
 
 
 // App Script >> 2) Open Sidebar --- Small Screen.
-burgerMenu.addEventListener("click", function () {
+burgerMenu.addEventListener("click", e => {
     aside.classList.toggle("aside--open");
     asideTopLogoText.forEach(function(text) {
         text.classList.add("aside-top__logoText--open");
@@ -34,7 +33,7 @@ burgerMenu.addEventListener("click", function () {
 })
 
 overlay.forEach(function(overlay) {
-    overlay.addEventListener("click", function () {
+    overlay.addEventListener("click", e => {
         aside.classList.remove("aside--open");
         asideTopLogoText.forEach(function(text) {
             text.classList.remove("aside-top__logoText--open");

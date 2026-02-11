@@ -58,7 +58,7 @@ header {
   font-family: 'Poppins SemiBold';
   font-size: 3.2rem;
   line-height: 100%;
-  color: var(--color_text-gray-950);
+  color: var(--color_gray-950);
 }
 /* Header Styles >> Center  */
 .header-searchbar {
@@ -77,14 +77,14 @@ header {
 #header-search__input::placeholder {
   font-family: 'Raleway Regular', sans-serif;
   font-size: 1.4rem;
-  color: var(--color_text-gray-950-50);
+  color: var(--color_gray-950-50);
   padding: 1rem 0;
 }
 .header-searchbar__btn {
   right: 2rem;
   top: 1rem;
   cursor: pointer;
-  color: var(--color_text-gray-950-50);
+  color: var(--color_gray-950-50);
   background-color: var(--color_white-100);
 }
 /* Header Styles >> Right Side  */
@@ -100,7 +100,7 @@ header {
   column-gap: 1.5rem;
 }
 .user-action__info-name {
-  color: var(--color_text-gray-950);
+  color: var(--color_gray-950);
   column-gap: 1.5rem;
   cursor: pointer;
 }
@@ -163,7 +163,7 @@ header {
 .aside-top {
   width: 17rem;
   height: 4.1rem;
-  color: var(--color_text-gray-950);
+  color: var(--color_gray-950);
   padding-left: 1.5rem;
 }
 .aside-top__link {
@@ -196,7 +196,7 @@ header {
   width: 16.6rem;
   height: 3.2rem;
   padding: 2.5rem 1.5rem;
-  color: var(--color_text-gray-950);
+  color: var(--color_gray-950);
   transition: all 100ms ease-in-out;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -222,7 +222,7 @@ header {
   display: block !important;
 }
 .aside-middle__icon--active {
-  color: var(--color_text-gray-950);
+  color: var(--color_gray-950);
 }
 /* Aside Styles >>>> 3) Aside Bottom Section  */
 .aside-bottom {
@@ -263,7 +263,7 @@ header {
   font-size: 1.4rem;
   letter-spacing: 10%;
   line-height: 3.6rem;
-  color: var(--color_text-gray-950);
+  color: var(--color_gray-950);
   cursor: pointer;
 }
 .aside-bottom__theme button:last-child {
@@ -272,12 +272,39 @@ header {
 
 /* =====@_@ Start App Main Styles >> Main Styles  @_@=====  */
 main {
-  /* background-color: var(--color_green-700); */
   grid-area: main;
+  padding: 3rem;
 }
-/* Main Styles >>>> 3) Main Form Styles  */
+/* Main Styles >>>> 1- Main Form Styles  */
 .header-searchbar--mb {
   display: none;
+}
+/* Main Styles >>>> 2- Main Left Side Styles >> 2.1- Asset  */
+#overview-section-heading {
+  font-size: 2rem;
+  font-family: 'Raleway Bold';
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--color_gray-950-50);
+}
+.asset {
+  margin-top: 3rem;
+}
+#asset__title, .asset__total, .asset__sub-title {
+  color: var(--color_gray-950);
+  font-family: 'Raleway SemiBold';
+  letter-spacing: 0.1rem;
+}
+.asset__total-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin: 8px 0;
+}
+.asset__total {
+  font-size: 3.2rem;
+}
+.asset__sub-title, .asset__title {
+  font-size: 1.6rem;
 }
 
 /* =====@_@ Start App Main Styles >> Overlay  @_@=====  */
@@ -288,7 +315,7 @@ main {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   -webkit-backdrop-filter: blur(2px);
   -moz-backdrop-filter: blur(2px);
   -ms-backdrop-filter: blur(2px);
