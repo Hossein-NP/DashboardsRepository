@@ -5,9 +5,6 @@
 @import url('Variabels.css');
 
 
-
-
-
 /* ===================^^^^^^^^^^^^^^^^^^^=================== */
 
 /* =====@_@ Reset Styles for CryptoDashboard @_@=====  */
@@ -35,6 +32,18 @@ input {
 }
 
 /* ===================^^^^^^^^^^^^^^^^^^^=================== */
+
+/* =====@_@ Components @_@=====  */
+.main-container__heading {
+  font-size: 2rem;
+  font-family: 'Raleway Bold';
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--color_gray-950-50);
+  width: fit-content;
+}
+
+/* ===================^^^^^^^^^^^^^^^^^^^=================== */
+
 
 /* =====@_@ Start App Main Styles @_@=====  */
 
@@ -275,17 +284,11 @@ main {
   grid-area: main;
   padding: 3rem;
 }
-/* Main Styles >>>> 1- Main Form Styles  */
+/* Main Styles >>>> 0- Main Form Styles For Small Screen  */
 .header-searchbar--mb {
   display: none;
 }
-/* Main Styles >>>> 2- Main Left Side Styles >> 2.1- Asset  */
-#overview-section-heading {
-  font-size: 2rem;
-  font-family: 'Raleway Bold';
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid var(--color_gray-950-50);
-}
+/* Main Styles >>>> 1- Dashboard Overview >>  Left Side Styles >> 1.1- Asset  */
 .asset {
   margin-top: 3rem;
 }
@@ -306,7 +309,45 @@ main {
 .asset__sub-title, .asset__title {
   font-size: 1.6rem;
 }
-
+/* Main Styles >>>> 1- Dashboard Overview >>  Left Side Styles >> 1.2- Chart  */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.chart {
+  padding: 32px 18px 30px 30px;
+  margin-top: 30px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  border-radius: 22px;
+  background-color: var(--color_white-100);
+}
+.chart-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#chart-title {
+  font-family: 'Raleway Bold';
+  font-size: 2.4rem;
+  vertical-align: middle;
+}
+.chart-filter__unit {
+  border: 1px solid var(--color_slate-800);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.chart-filter__unit button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 /* =====@_@ Start App Main Styles >> Overlay  @_@=====  */
 .overlay {
   display: none;
