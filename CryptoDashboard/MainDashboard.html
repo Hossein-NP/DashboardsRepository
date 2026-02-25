@@ -310,25 +310,48 @@
             <!-- Chart Top Section -->
             <div class="chart-top">
               <h3 id="chart-title" class="chart__title">Chart</h3>
-              <!-- Unit Filter  -->
               <div class="chart-filter">
+                <!-- Unit Filter  -->
                 <div class="chart-filter__unit" aria-label="unit button">
                   <!-- Show Default Unit  -->
                   <button type="button" aria-label="usd unit">
-                    <svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24">
                       <use href="#usd-unit"></use>
                     </svg>
                     <span>USD</span>
-                    <svg >
+                    <svg viewBox="0 0 24 24">
                       <use href="#arrow-down"></use>
                     </svg>
                   </button>
                 </div>
-                <button type="button" class="chart-modal">
+                <button type="button" class="chart-modal" aria-label="kandel filter button">
                   <svg width="18" height="18" viewBox="0 0 18 18">
                     <use href="#kandel"></use>
                   </svg>
                 </button>
+              </div>
+            </div>
+            <!-- Chart Asset -->
+            <div class="chart-asset">
+              <div class="chart-asset__unit">
+                <button type="button">
+                  <span>Bitcoin/BTC</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use href="#arrow-down"></use>
+                  </svg>
+                </button>
+                <!-- Total Asset  -->
+                <p class="chart-asset__value-total">
+                  <data value="35,352.02">$35,352.02</data>
+                </p>
+              </div>
+              <!-- Chart Asset Pagination  -->
+              <div class="chart-asset__pagination">
+                <button type="button">1h</button>
+                <button type="button">3h</button>
+                <button type="button">1d</button>
+                <button type="button">1w</button>
+                <button type="button">1m</button>
               </div>
             </div>
           </section>

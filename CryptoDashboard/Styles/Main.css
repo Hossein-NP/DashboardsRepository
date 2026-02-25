@@ -364,11 +364,11 @@ main {
   opacity: 0.5;
 }
 .chart-filter__unit button svg {
-  display: flex;
-  /* flex-shrink: 0; */
-  align-items: center;
   width: 24px;
   height: 24px;
+}
+.chart-filter__unit button svg:first-child {
+  margin-top: 5px;
 }
 .chart-modal {
   border: 1px solid var(--color_slate-800);
@@ -379,6 +379,54 @@ main {
   border-radius: 5px;
   height: 32px;
   padding: 7px;
+}
+.chart-asset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+.chart-asset__unit {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Raleway Medium';
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  color: var(--color_text-gray-800);
+}
+.chart-asset__value-total data{
+  color: var(--color_gray-3);
+  font-family: 'Raleway ExtraBold';
+  font-size: 1.8rem;
+}
+.chart-asset__unit button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.chart-asset__pagination {
+  display: flex;
+  gap: 1rem;
+}
+.chart-asset__pagination button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins Medium';
+  font-size: 1rem;
+  width: 4rem;
+  height: 2.2rem;
+  border: 1px solid rgba(49, 53, 63, 1);
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  border-radius: 5rem;
+}
+.chart-asset__pagination button:first-child {
+  background-color: var(--color_blue-600);
+  border: none;
 }
 /* =====@_@ Start App Main Styles >> Overlay  @_@=====  */
 .overlay {
