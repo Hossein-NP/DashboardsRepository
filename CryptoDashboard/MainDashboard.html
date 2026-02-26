@@ -332,28 +332,30 @@
               </div>
             </div>
             <!-- Chart Asset -->
-            <div class="chart-asset">
+            <section class="chart-asset" aria-label="Cryptocurrency Asset Chart">
+              <!-- Asset Unit -->
               <div class="chart-asset__unit">
-                <button type="button">
-                  <span>Bitcoin/BTC</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24">
+                <button type="button" aria-expanded="false" aria-controls="asset-options" aria-label="Select asset">
+                  Bitcoin/BTC
+                  <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
                     <use href="#arrow-down"></use>
                   </svg>
                 </button>
                 <!-- Total Asset  -->
                 <p class="chart-asset__value-total">
-                  <data value="35,352.02">$35,352.02</data>
+                  <data value="35,352.02" aria-label="total asset value">$35,352.02</data>
                 </p>
               </div>
               <!-- Chart Asset Pagination  -->
-              <div class="chart-asset__pagination">
+              <div class="chart-asset__pagination" role="group" aria-label="Chart time range selection">
                 <button type="button">1h</button>
                 <button type="button">3h</button>
                 <button type="button">1d</button>
                 <button type="button">1w</button>
                 <button type="button">1m</button>
               </div>
-            </div>
+            </section>
+            <section id="bitcoin-chart"></section>
           </section>
         </section>
         <!-- Main Right Panel  -->
@@ -369,6 +371,7 @@
   
 
   <!-- *_*Scripts*_*    -->
+  <script src="Scripts/Plugins/apxchart.js"></script>
   <script src="Scripts/Main.js"></script>
 
 </body>

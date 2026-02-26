@@ -399,6 +399,7 @@ main {
   color: var(--color_gray-3);
   font-family: 'Raleway ExtraBold';
   font-size: 1.8rem;
+  letter-spacing: 1px;
 }
 .chart-asset__unit button {
   display: flex;

@@ -41,3 +41,42 @@ overlay.forEach(function(overlay) {
         overlay.classList.remove("overlay--active");
     });
 });
+
+
+//Apex Chart
+var options = {
+  chart: {
+    type: 'area',
+    fontFamily: 'Raleway Medium'
+  },
+  series: [{
+    name: 'فروش',
+    data: [30,40,35,50,49,60,70,91,125]
+  }],
+  xaxis: {
+    categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
+  },
+  fill: {
+  colors: ['rgba(58, 111, 248, 1)'],
+  opacity: 0.3,
+  type: 'gradient',
+  gradient: {
+      shade: 'dark',
+      type: "horizontal",
+      shadeIntensity: 0.5,
+      gradientToColors: ['rgba(58, 111, 248, 1)'],
+      inverseColors: true,
+      opacityFrom: 0.5,
+      opacityTo: 0.1,
+      stops: [0, 50, 100],
+      colorStops: []
+        }
+    },
+    dataLabels: {
+  enabled: false,
+  },
+}
+
+var chart = new ApexCharts(document.querySelector("#bitcoin-chart"), options);
+
+chart.render();
